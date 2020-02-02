@@ -8,21 +8,45 @@
 
 import UIKit
 import SwiftUI
+import SnapKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
+    var disposeBag = DisposeBag()
+    
+    private var viewModel: ViewModel!
+    
+    private var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Just to show it works :)
-        // Set this to any color you like and see it appear live!
-        view.backgroundColor = .red
+        viewModel = ViewModel()
+        
+        setupSubviews()
+        layoutConstraints()
+        bindObservables()
     }
 }
+
+extension ViewController: Snapkitable {
+    func setupSubviews() {
+        view.backgroundColor = .white
+    }
+    
+    func layoutConstraints() {}
+}
+
+
+extension ViewController: ReactiveBindable {
+    func bindObservables() {}
+}
+
 
 /// This is required to have previews in the canvas.
 /// You can add modifiers to specify devices and other elements just like in SwiftUI previews.
 struct VCPreview: PreviewProvider {
-    
     static var previews: some View {
         VCContainerView()
         .edgesIgnoringSafeArea(.all)
