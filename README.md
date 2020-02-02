@@ -15,7 +15,7 @@ As UIKit does not provide live previews by default, this is more suited to these
 
 # Usage
 
-Clone the project and open the file you need for UIKit or SwiftUI (either ViewController or ContentView, respectively).
+Clone the project and open the file you need for UIKit or SwiftUI (either `ViewController` or `ContentView`, respectively). If you are using SwiftUI, don't forget to uncomment the SwiftUI block in `SceneDelegate`.
 
 As you type, live previews update in the canvas. 
 
