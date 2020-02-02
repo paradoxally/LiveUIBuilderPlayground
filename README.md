@@ -1,7 +1,7 @@
 # LiveUIBuilderPlayground
 A delightful way to build your code-based UIKit/SwiftUI views in isolation with live previews!  🎉 
 
-Inspired by [Adrian Navarro on Medium](https://medium.com/better-programming/improving-your-workflow-with-uikit-swift-previews).
+Inspired by [Adrian Navarro on Medium](https://medium.com/better-programming/improving-your-workflow-with-uikit-swift-previews-97ad5cdde742).
 
 **Requires macOS 10.15 Catalina for live previews.**
 
