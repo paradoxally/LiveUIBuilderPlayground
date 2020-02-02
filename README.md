@@ -6,8 +6,12 @@ A delightful way to build your code-based UIKit/SwiftUI views in isolation with 
 If your answer is yes to at least one of the following questions, this project is for you.
 
 - Do you need to test a new design in your app but don't want to deal with compiling your entire project?
-- Do you need to just focus on the UI for quick prototyping?
+- Do you need to just focus on the UI for rapid prototyping?
 - Do you prefer writing layouts in code?
+
+This project allows you to create views which you can test for conformance to your design standard (Invision, Sketch, Figma, etc). Once you're satisfied with your code-based layout, you can integrate it with your main project.
+
+As UIKit does not provide live previews by default, this is more suited to these developers who need a quick way to build and test layouts (without injecting SwiftUI's previews into their main project). However, you can use this to test SwiftUI layouts in isolation, too.
 
 # Usage
 
