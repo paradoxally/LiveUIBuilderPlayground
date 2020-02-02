@@ -15,6 +15,9 @@ As UIKit does not provide live previews by default, this is more suited to these
 
 # Usage
 
+If you just want a barebones live preview, checkout the `master` branch. 
+If you want to follow the MVVM pattern and use SnapKit and RxSwift bindings, use the `develop` branch.
+
 Clone the project and open the file you need for UIKit or SwiftUI (either `ViewController` or `ContentView`, respectively). 
 
 **If you are using SwiftUI, don't forget to uncomment the SwiftUI block in `SceneDelegate`.**
@@ -25,5 +28,7 @@ As you type, live previews update in the canvas.
 
 Future improvements:
 
-- [ ] Integrate a package manager to easily add required dependencies for testing.
-- [ ] Standardize protocols for code clarity and separation of concerns.
+- [x] Integrate a package manager to easily add required dependencies for testing (`develop` branch).
+- [x] Standardize protocols for code clarity and separation of concerns (`develop` branch).
+
+Feel free to submit improvement suggestions with issues and/or pull requests.
